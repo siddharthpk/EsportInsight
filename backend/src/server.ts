@@ -3,10 +3,12 @@ dotenv.config();
 
 import axios from "axios";
 import express from "express";
+import cors from "cors";
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
+app.use(cors()); // Use CORS middleware
 
 // Middleware to parse JSON bodies
 app.use(express.json());
