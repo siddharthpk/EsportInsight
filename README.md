@@ -28,7 +28,7 @@ The project is divided into two main components:
 
 ### Prerequisites
 
-- Node.js (version 14 or newer)
+- Node.js (version 20 or newer)
 - npm (version 6 or newer)
 - Docker
 
