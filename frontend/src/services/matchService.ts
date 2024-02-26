@@ -13,8 +13,6 @@ const url = process.env.REACT_APP_BASE_URL;
 
 const fetchLiveMatches = async (): Promise<MatchData[]> => {
   try {
-    console.log(`${url}/livematches`); // Add this line before your axios.get call
-
     const response = await axios.get(`${url}/livematches`);
     return response.data; // Assuming the backend sends the data in the response body directly
   } catch (error) {
